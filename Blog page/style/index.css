@@ -39,7 +39,7 @@
     flex-direction: column;
 }
 
-.profile-image {
+.home-page .profile-image {
     height: 6em;
     width: 6em;
     border-radius: 50%;
@@ -56,6 +56,7 @@
 .sub-text {
     margin-top: 4px;
     color: white;
+    text-align: center;
 }
 
 /* blog list */

@@ -27,7 +27,6 @@ buildPost = (individualData) => {
         <div>
             <a href="./index.html" class="navigator"> Back </a>
         </div>
-
         <div class="post-container">
             <div id="individual-title">
                 <h2> ${individualData.title} </h2>

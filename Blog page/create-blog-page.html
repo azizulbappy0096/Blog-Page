@@ -7,21 +7,22 @@
     <title>Document</title>
     <!-- local CSS -->
     <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/post-page.css">
     <link rel="stylesheet" href="./style/create-blog-page.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
-<body>
+<body class="new-post-page">
     <header id="header">
         <div class="container-fluid">
             <div class="row">
                 <div class="col header-container">
                     <div class="profile-image"></div>
                     <div class="profile-name text-center">
-                        Azizul Bappy
+                        Create a new post
                     </div>
                     <div class="sub-text">
-                        Welcome to my Blog post.
+                        Express your thought independently
                     </div>
                 </div>
             </div>
@@ -30,7 +31,35 @@
 
     <main>
         <div class="container">
-            <div class="row individualPost">
+            <div class="row">
+                <div class="col-md-12">
+                    <div>
+                        <a href="./index.html" class="navigator"> Back </a>
+                    </div>
+
+                    <form>
+                        <div class="form-group">
+                          <label for="post-title">Title</label>
+                          <input type="text" class="form-control" id="post-title" placeholder="Type blog title">
+                        </div>
+
+                        <div class="form-group">
+                          <label for="content">Content</label>
+                          <textarea class="form-control" id="post-content" rows="8"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="post-image"> Choose Image </label>
+                            <input type="file" class="form-control-file" id="post-image" accept="image/*">
+                        </div>
+                        
+                        <div class="form-group">
+                            <button type="button" onclick="postData()" id="submit" class="btn btn-primary mb-2">Submit</button>
+                        </div>
+                        
+                    </form> 
+                    
+                </div>
                  
             </div>
         </div>
@@ -39,5 +68,7 @@
     <footer>
         <p>Made with ❤ by Azizul Bappy</p>
     </footer>
+
+    <script src="./js/create-blog-page.js"></script>
 </body>
 </html>

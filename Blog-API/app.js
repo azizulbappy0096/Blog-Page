@@ -7,7 +7,7 @@ const postData = new posts();
 var multer  = require('multer');
 var storage = multer.diskStorage({
     destination: function (req, file, cb) {
-      cb(null, 'images');
+      cb(null, './images');
     },
     filename: function (req, file, cb) {
       cb(null, file.fieldname + '-' + Date.now() +  getExtention(file.mimetype));
@@ -61,9 +61,9 @@ app.post('/api/posts', upload.single('post_image'), (req,res) => {
         "post_image": `uploads/${req.file.filename}`,
         "added_date": `${Date.now()}`
     } 
-    
+
     postData.addPost(newPost);
-    res.status(201).send(newPost);
+    res.status(201).send('oka');
 })
 
 

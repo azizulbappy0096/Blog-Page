@@ -1,0 +1,9 @@
+.new-post-page #header {
+    background-image: url('../assets/jess-bailey-UHqfUTDmdC4-unsplash.jpg');
+}
+
+form {
+    margin: 12px 0;
+    font-size: 0.8em;
+}
+
