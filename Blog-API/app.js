@@ -10,7 +10,7 @@ var storage = multer.diskStorage({
       cb(null, './images');
     },
     filename: function (req, file, cb) {
-      cb(null, file.fieldname + '-' + Date.now() +  getExtention(file.mimetype));
+      cb(null, file.fieldname + '-' + Date.now() + getExtention(file.mimetype));
     }
 });
 
@@ -68,5 +68,5 @@ app.post('/api/posts', upload.single('post_image'), (req,res) => {
 
 
 app.listen(3000, () => {
-    console.log('Listening to https://localhost:3000')
+    console.log('Listening to http://localhost:3000')
 });
