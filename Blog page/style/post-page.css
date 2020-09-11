@@ -1,0 +1,39 @@
+.container {
+    width: 60%!important;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%!important;
+    }    
+}
+
+.navigator {
+    border: 1px solid blue;
+    width: 50px;
+    height: 30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+a:hover {
+    text-decoration: none!important;
+}
+
+.row {
+    flex-direction: column;
+    margin: 12px!important;
+}
+
+#individual-title {
+    padding: 24px 0;
+    text-align: center;
+}
+
+#individual-time {
+    font-size: .7em;
+    color: rgb(125, 129, 129);
+}
+

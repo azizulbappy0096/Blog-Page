@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header part & banner */
+#header {
+    height: 300px;
+    display: flex!important;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.home-page #header {
+    background-image: url('../assets/jess-bailey-UHqfUTDmdC4-unsplash.jpg');
+}
+
+#header > * {
+    z-index: 10;
+}
+
+#header::after {
+    content: '';
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.5);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-image {
+    height: 6em;
+    width: 6em;
+    border-radius: 50%;
+    background-image: url('../assets/1580806416936.jpg');
+    background-size: cover;
+
+}
+
+.profile-name {
+    font-size: 3em;
+    color: white;
+}
+
+.sub-text {
+    margin-top: 4px;
+    color: white;
+}
+
+/* blog list */
+.blog-container {
+    width: 60%!important;
+    margin: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {
+    .blog-container {
+        width: 100%!important;
+    }    
+}
+
+.blog-lists {
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+    overflow: hidden;
+    margin: 12px;
+    box-shadow: 0.1em 0.1em .3em rgb(22, 22, 22, 0.4);
+    cursor: pointer;
+}
+
+.blog-lists:hover {
+    /* box-shadow: 0em 0.2em 0.6em 0.1em rgb(22, 22, 22, 0.4); */
+    transform: translate3d(0, -0.3em, 0);
+    transition: all .5s ease;
+}
+
+.blog-cover-img {
+    flex-basis: 40%;
+    background-size: cover;
+    background-position: center;
+}
+
+.blog-content {
+    flex-basis: 60%;
+    flex-grow: 2;
+    padding: 16px;
+}
+
+.publish-time {
+    font-size: .6em;
+    color: rgb(125, 129, 129);
+}
+
+.blog-content h5 {
+    margin-top: 12px;
+}
+
+.actual-writing {
+    max-height: 70px;
+    overflow: hidden;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    background-color: slategrey;
+    padding: 16px;
+    margin: 0;
+}
+
+/* add button */
+.new-button {
+    position: fixed;
+    right: 2em;
+    font-size: 1.5em;
+    color: rgb(255, 248, 248);
+    bottom: 2em;
+    background-color: rgba(0, 0, 255, 0.973);
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.25s ease;
+    font-weight: 600;
+}
+
+.new-button:hover {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 255, 0.877);
+}
+
+a.post-link {
+    color: black;
+    width: inherit;
+    width: 100%;
+}
+
+a.post-link:hover {
+    text-decoration: none;
+    color: black;
+}
