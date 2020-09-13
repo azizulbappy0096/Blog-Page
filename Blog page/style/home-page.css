@@ -1,0 +1,9 @@
+.home-page #header {
+    background-image: url('../assets/jess-bailey-UHqfUTDmdC4-unsplash.jpg');
+}
+
+.navbar {
+    position: absolute!important;
+    top: 0;
+    right: 0;
+}

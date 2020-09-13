@@ -1,3 +1,12 @@
+getId = () => {
+    const queryParams = window.location.search;
+    const urlParams = new URLSearchParams(queryParams);
+    const id = urlParams.get('admin_id');
+    return id;
+}
+
+document.querySelector('.navigator').href = `index.html?admin_id=${getId()}`;
+
 postData = () => {
     let title = document.querySelector("#post-title").value;
     let content = document.querySelector("#post-content").value;
@@ -8,13 +17,15 @@ postData = () => {
     data.append("content", content);
     data.append("post_image", post_image.files[0]);
 
-    fetch("http://localhost:3000/api/posts", {
+    fetch(`http://localhost:3000/api/posts/${getId()}`, {
         method: "POST",
         body: data
-    }).then(() => {
-        setTimeout(() => {
-            window.location.href = "index.html";
-        })
+    }).then((response) => {
+        if(response.ok) {
+            setTimeout(() => {
+                window.location.href = `index.html?admin_id=${getId()}`;
+            });
+        }
     })
 };
 

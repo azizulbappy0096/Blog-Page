@@ -9,13 +9,44 @@ class Posts {
 
     getIndividualPost(postId) {
         const currentData = this.readData();
-        const foundData = currentData.find(post => post.id === postId);
+        let foundData;
+        for(let data of currentData) {
+            foundData = data.blogs.find(post => post.id === postId);
+        };
         return foundData;
     }
 
-    addPost(newPost) {
+    getAdminInfo() {
+        const data = this.readData();
+        const allAdmin = data.map(admin => ({
+            "user_id": admin["user_id"],
+            "name": admin["name"],
+            "user_name": admin["user_name"],
+            "password": admin["password"]
+        }));
+
+        return allAdmin;
+    }
+
+    getAdminPosts(adminId) {
         const currentData = this.readData();
-        currentData.unshift(newPost);
+        const foundData = currentData.find(admin => admin["user_id"] === adminId);
+        return foundData;
+    }
+
+    addPost(adminId, newPost) {
+        const currentData = this.readData();
+        for(let admin of currentData) {
+            if(admin["user_id"] === adminId) {
+                admin["blogs"].unshift(newPost);
+            }
+        }
+        this.storeData(currentData);
+    }
+
+    addAdmin(details) {
+        const currentData = this.readData();
+        currentData.unshift(details);
         this.storeData(currentData);
     }
 

@@ -7,20 +7,26 @@
     <title> My Blog </title>
     <!-- local CSS -->
     <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/home-page.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
-<body class="admin-home-page">
+<body class="home-page">
     <header id="header">
+        <nav class="navbar navbar-light text-right">
+            <a href="sign-in_sign-up.html?name=sign_in" id="sign-in-btn" class="btn btn-primary btn-sm mx-2" role="button" aria-pressed="true">Sign in</a>
+            <a href="sign-in_sign-up.html?name=sign_up" id="sign-up-btn" class="btn btn-secondary btn-sm" role="button" aria-pressed="true">Sign up</a>
+        </nav>
+
         <div class="container-fluid">
             <div class="row">
                 <div class="col header-container">
                     <div class="profile-image"></div>
                     <div class="profile-name text-center">
-                        Azizul Bappy
+                        Sign in/Sign up to create your own blog
                     </div>
                     <div class="sub-text">
-                        Welcome to my Blog post.
+                        Welcome to Blog post.
                     </div>
                 </div>
             </div>
@@ -33,14 +39,10 @@
         </div>
     </main>
 
-    <div class="add-button">
-        <a href="./create-blog-page.html" class="new-button"> + </a>
-    </div>
-
     <footer>
         <p>Made with ❤ by Azizul Bappy</p>
     </footer>
     
-    <script src="./js/index.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

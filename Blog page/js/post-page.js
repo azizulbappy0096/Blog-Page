@@ -4,12 +4,21 @@ getId = () => {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const id = urlParams.get('id');
-    
-    return id;
+    const adminId = urlParams.get("admin_id");
+    return {"id": id, "adminId": adminId};
+}
+
+previousPage = () => {
+    let adminId = getId()["adminId"];
+    if(adminId) {
+        return `index.html?admin_id=${adminId}`;
+    }else {
+        return "./home-page.html";
+    }
 }
 
 getIndividualPost = () => {
-    fetch(`${url}/api/posts/${getId()}`).then(response => {
+    fetch(`${url}/api/posts/${getId()["id"]}`).then(response => {
         if(response.ok) {
             return response.json();
         }
@@ -25,7 +34,7 @@ buildPost = (individualData) => {
 
     let HTML = `
         <div>
-            <a href="./index.html" class="navigator"> Back </a>
+            <a href=${previousPage()} class="navigator"> Back </a>
         </div>
         <div class="post-container">
             <div id="individual-title">
@@ -47,6 +56,5 @@ buildPost = (individualData) => {
 }
 
 window.onload = () => {
-    getId();
     getIndividualPost();
 }

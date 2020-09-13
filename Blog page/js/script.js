@@ -2,7 +2,7 @@ const url = 'http://localhost:3000';
 
 window.onload = () => {
     getData();
-}
+};
 
 getData = () => {
     fetch(`${url}/api/posts/`).then(response => {
@@ -20,27 +20,41 @@ buildPost = (data) => {
     let postsHTML = '';
 
     data.map(data => {
-        let postDate = new Date(Number(data.added_date)).toDateString();
+        data.blogs.map(alldata => {
+            if(alldata !== null) {
+            let postDate = new Date(Number(alldata.added_date)).toDateString();
 
-        postsHTML += `
-        
-        <a href="./post-page.html?id=${data.id}" class="post-link row justify-content-center ">
-            <div class="row flex-nowrap justify-content-center blog-lists">
-            
-                <div class="blog-cover-img" style="background-image: url(${url}/${data.post_image})"></div>
-                <div class="blog-content">
-                    <div class="publish-time"> ${postDate} </div>
-                    <h5> ${data.title} </h5>
-                    <div class="actual-writing"> ${data.content} </div>
+            postsHTML += `
+            <a href="./post-page.html?id=${alldata.id}" class="post-link row justify-content-center ">
+                <div class="row flex-nowrap justify-content-center blog-lists">
+                
+                    <div class="blog-cover-img" style="background-image: url(${url}/${alldata.post_image})"></div>
+                    <div class="blog-content">
+                        <div class="publish-time-name"> 
+                            <p class="time"> ${postDate} </p>
+                            <p class="name"> ~${data.name} </p> 
+                        </div>
+                        <h5> ${alldata.title} </h5>
+                        <div class="actual-writing"> ${alldata.content} </div>
+                    </div>
+                    
                 </div>
-             
-            </div>
-        </a>
-        `
+            </a>
+            `;
+            
+            };
+        })
+        
     });
 
     document.querySelector('.blog-container').innerHTML = postsHTML;
 };
+
+
+
+
+
+
 
 
 

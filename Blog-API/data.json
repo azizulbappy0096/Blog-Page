@@ -1,37 +1,155 @@
 [
   {
-    "id": "1599854688626",
-    "title": "Testing",
-    "content": "According to a recent U.K. survey, bloggers have ranked as the third most trustworthy source of information, following only friends and family. That's right -- bloggers are trusted more than celebrities, journalists, brands, and politicians.\n\nBut how do you get people to fall in love with your blog in the first place? (Aside from remarkable content, of course.)\nWell, just as your website homepage is like the front door to your business, your blog's design -- much like a welcome mat -- is the front door to your business blog.\n\nIf you're not attracting people visually, how will you get them to take the next steps to actually read (and, hopefully, subscribe to) your content? Once you're done creating the quality content, you still have the challenge of presenting it in a way that clearly dictates what your blog is about. Images, text, and links need to be shown off just right -- otherwise, readers might abandon your content, if it's not showcased in a way that's appealing, easy to follow, and generates more interest.\n\nThat's why we've compiled some examples of blog homepages to get you on the right track to designing the perfect blog for your readers. Check 'em out, below.",
-    "post_image": "uploads/post_image-1599854688616.jpeg",
-    "added_date": "1599854688626"
+    "user_id": "1600017421886",
+    "name": "CleverBappy",
+    "user_name": "clever09",
+    "password": "1234",
+    "profile_image": "uploads/profile_img/profile_image-1600017421847.jpeg",
+    "blogs": [
+      {
+        "id": "1600017597842",
+        "title": "Testing-2",
+        "content": "0 1 2 3 4 5 6  7 8 9",
+        "post_image": "uploads/blog_img/post_image-1600017597805.jpeg",
+        "added_date": "1600017597842"
+      },
+      {
+        "id": "1600017527189",
+        "title": "Testing",
+        "content": "1 2 3 4 5 6 7 8 9 10",
+        "post_image": "uploads/blog_img/post_image-1600017527147.png",
+        "added_date": "1600017527189"
+      },
+      null
+    ]
   },
   {
-    "id": "1581461442206",
-    "title": "This is a New Blog Post",
-    "content": "This is the content! ",
-    "post_image": "uploads/post-image-1581461442199.jpg",
-    "added_date": "1581461442206"
+    "user_id": "1599904031442",
+    "name": "Azizul Bappy",
+    "user_name": "azizulbappy0096",
+    "password": "23",
+    "profile_image": "uploads/profile_img/profile_image-1580806416936.jpg",
+    "blogs": [
+      {
+        "id": "1599904031442",
+        "title": "The State of JavaScript 2019",
+        "content": "The State of JavaScript 2019 is a collection of statistics and facts describing the world of JavaScript in 2019.\n\nTo not include the works of Sacha Greif and Raphaël Benitte in a list of influential JavaScript publications 2019 would be a huge oversight. The State of JavaScript in 2019 describes everything JavaScript:\n\n    the continued popularity of React in the \n    front-end framework ecosystem\n    the rise of TypeScript quantitatively\n    the demographics of JavaScript\n    the new back-end frameworks\n    and more\n\nFor new developers looking to pick up the most in-demand skills and for seasoned pros (colloquially referred to as \"JS Ninjas\" by recruiters) looking to know their worth, this is an annual must-read.\n\n",
+        "post_image": "uploads/blog_img/post_image-1599904031431.png",
+        "added_date": "1599904031442"
+      },
+      {
+        "id": "1599854688626",
+        "title": "Testing",
+        "content": "According to a recent U.K. survey, bloggers have ranked as the third most trustworthy source of information, following only friends and family. That's right -- bloggers are trusted more than celebrities, journalists, brands, and politicians.\n\nBut how do you get people to fall in love with your blog in the first place? (Aside from remarkable content, of course.)\nWell, just as your website homepage is like the front door to your business, your blog's design -- much like a welcome mat -- is the front door to your business blog.\n\nIf you're not attracting people visually, how will you get them to take the next steps to actually read (and, hopefully, subscribe to) your content? Once you're done creating the quality content, you still have the challenge of presenting it in a way that clearly dictates what your blog is about. Images, text, and links need to be shown off just right -- otherwise, readers might abandon your content, if it's not showcased in a way that's appealing, easy to follow, and generates more interest.\n\nThat's why we've compiled some examples of blog homepages to get you on the right track to designing the perfect blog for your readers. Check 'em out, below.",
+        "post_image": "uploads/blog_img/post_image-1599854688616.jpeg",
+        "added_date": "1599854688626"
+      },
+      {
+        "id": "1581461442206",
+        "title": "This is a New Blog Post",
+        "content": "This is the content! ",
+        "post_image": "uploads/blog_img/post-image-1581461442199.jpg",
+        "added_date": "1581461442206"
+      },
+      {
+        "id": "1581377760891",
+        "title": "My first job as a developer",
+        "content": "In college, I met a friend at a computer club who was showing a really cool application where you can swipe between different types of clothing!\nBeing very intrigued, I asked my friend if there is any way I can help out and join the team! After some thinking, he told me to finish an assignment, and then they will consider me. Over the weekend, I finished the assignment and was right away told I can join the team, though I would be working for free. That was completely fine for me!\nIn college, I met a friend at a computer club who was showing a really cool application where you can swipe between different types of clothing!\nBeing very intrigued, I asked my friend if there is any way I can help out and join the team! After some thinking, he told me to finish an assignment, and then they will consider me. Over the weekend, I finished the assignment and was right away told I can join the team, though I would be working for free. That was completely fine for me! ",
+        "post_image": "uploads/blog_img/post-image-1581377760883.jpg",
+        "added_date": "1581377760891"
+      },
+      {
+        "id": "1581376324100",
+        "title": "I LOVE JavaScript",
+        "content": "I have been using JavaScript since the beginning of my coding career!\nI used it to build simple websites and I used it to build large scale applications!  \nNow I use it to teach others, as well as create large applications. The possibilities of this language are endless, and the use cases keep increasing every single day! ",
+        "post_image": "uploads/blog_img/post-image-1581376324096.png",
+        "added_date": "1581376324100"
+      },
+      {
+        "id": "1581375207401",
+        "title": "Why learning coding is important?",
+        "content": "Nowadays with everything being electronic, everything needs to be programmed! \n\nFrom computers, to cars, machines, or anything else it most likely requires programming!\n\nSo as a result, demand for coders keeps increasing year by year, due to all these technological advances!",
+        "post_image": "uploads/blog_img/post-image-1581375207393.jpg",
+        "added_date": "1581375207401"
+      }
+    ]
   },
   {
-    "id": "1581377760891",
-    "title": "My first job as a developer",
-    "content": "In college, I met a friend at a computer club who was showing a really cool application where you can swipe between different types of clothing!\nBeing very intrigued, I asked my friend if there is any way I can help out and join the team! After some thinking, he told me to finish an assignment, and then they will consider me. Over the weekend, I finished the assignment and was right away told I can join the team, though I would be working for free. That was completely fine for me!\nIn college, I met a friend at a computer club who was showing a really cool application where you can swipe between different types of clothing!\nBeing very intrigued, I asked my friend if there is any way I can help out and join the team! After some thinking, he told me to finish an assignment, and then they will consider me. Over the weekend, I finished the assignment and was right away told I can join the team, though I would be working for free. That was completely fine for me! ",
-    "post_image": "uploads/post-image-1581377760883.jpg",
-    "added_date": "1581377760891"
-  },
-  {
-    "id": "1581376324100",
-    "title": "I LOVE JavaScript",
-    "content": "I have been using JavaScript since the beginning of my coding career!\nI used it to build simple websites and I used it to build large scale applications!  \nNow I use it to teach others, as well as create large applications. The possibilities of this language are endless, and the use cases keep increasing every single day! ",
-    "post_image": "uploads/post-image-1581376324096.png",
-    "added_date": "1581376324100"
-  },
-  {
-    "id": "1581375207401",
-    "title": "Why learning coding is important?",
-    "content": "Nowadays with everything being electronic, everything needs to be programmed! \n\nFrom computers, to cars, machines, or anything else it most likely requires programming!\n\nSo as a result, demand for coders keeps increasing year by year, due to all these technological advances!",
-    "post_image": "uploads/post-image-1581375207393.jpg",
-    "added_date": "1581375207401"
+    "user_id": "159990403142",
+    "name": "Azizul Bappy",
+    "user_name": "azizulbappy00",
+    "password": "233",
+    "profile_image": "uploads/profile_img/profile_image-1580806416936.jpg",
+    "blogs": [
+      {
+        "id": "1600009259409",
+        "title": "a",
+        "content": "a",
+        "post_image": "uploads/blog_img/post_image-1600009259392.jpeg",
+        "added_date": "1600009259409"
+      },
+      {
+        "id": "1599942990877",
+        "content": "as",
+        "post_image": "uploads/blog_img/post_image-1599942990843.jpeg",
+        "added_date": "1599942990877"
+      },
+      {
+        "id": "1599942891856",
+        "title": "as",
+        "content": "as",
+        "post_image": "uploads/blog_img/post_image-1599942891800.jpeg",
+        "added_date": "1599942891856"
+      },
+      {
+        "id": "1599942237384",
+        "title": "a",
+        "content": "a",
+        "post_image": "uploads/blog_img/post_image-1599942237372.jpeg",
+        "added_date": "1599942237384"
+      },
+      {
+        "id": "1599904031442",
+        "title": "The State of JavaScript 2019",
+        "content": "The State of JavaScript 2019 is a collection of statistics and facts describing the world of JavaScript in 2019.\n\nTo not include the works of Sacha Greif and Raphaël Benitte in a list of influential JavaScript publications 2019 would be a huge oversight. The State of JavaScript in 2019 describes everything JavaScript:\n\n    the continued popularity of React in the \n    front-end framework ecosystem\n    the rise of TypeScript quantitatively\n    the demographics of JavaScript\n    the new back-end frameworks\n    and more\n\nFor new developers looking to pick up the most in-demand skills and for seasoned pros (colloquially referred to as \"JS Ninjas\" by recruiters) looking to know their worth, this is an annual must-read.\n\n",
+        "post_image": "uploads/blog_img/post_image-1599904031431.png",
+        "added_date": "1599904031442"
+      },
+      {
+        "id": "1599854688626",
+        "title": "Testing",
+        "content": "According to a recent U.K. survey, bloggers have ranked as the third most trustworthy source of information, following only friends and family. That's right -- bloggers are trusted more than celebrities, journalists, brands, and politicians.\n\nBut how do you get people to fall in love with your blog in the first place? (Aside from remarkable content, of course.)\nWell, just as your website homepage is like the front door to your business, your blog's design -- much like a welcome mat -- is the front door to your business blog.\n\nIf you're not attracting people visually, how will you get them to take the next steps to actually read (and, hopefully, subscribe to) your content? Once you're done creating the quality content, you still have the challenge of presenting it in a way that clearly dictates what your blog is about. Images, text, and links need to be shown off just right -- otherwise, readers might abandon your content, if it's not showcased in a way that's appealing, easy to follow, and generates more interest.\n\nThat's why we've compiled some examples of blog homepages to get you on the right track to designing the perfect blog for your readers. Check 'em out, below.",
+        "post_image": "uploads/blog_img/post_image-1599854688616.jpeg",
+        "added_date": "1599854688626"
+      },
+      {
+        "id": "1581461442206",
+        "title": "This is a New Blog Post",
+        "content": "This is the content! ",
+        "post_image": "uploads/blog_img/post-image-1581461442199.jpg",
+        "added_date": "1581461442206"
+      },
+      {
+        "id": "1581377760891",
+        "title": "My first job as a developer",
+        "content": "In college, I met a friend at a computer club who was showing a really cool application where you can swipe between different types of clothing!\nBeing very intrigued, I asked my friend if there is any way I can help out and join the team! After some thinking, he told me to finish an assignment, and then they will consider me. Over the weekend, I finished the assignment and was right away told I can join the team, though I would be working for free. That was completely fine for me!\nIn college, I met a friend at a computer club who was showing a really cool application where you can swipe between different types of clothing!\nBeing very intrigued, I asked my friend if there is any way I can help out and join the team! After some thinking, he told me to finish an assignment, and then they will consider me. Over the weekend, I finished the assignment and was right away told I can join the team, though I would be working for free. That was completely fine for me! ",
+        "post_image": "uploads/blog_img/post-image-1581377760883.jpg",
+        "added_date": "1581377760891"
+      },
+      {
+        "id": "1581376324100",
+        "title": "I LOVE JavaScript",
+        "content": "I have been using JavaScript since the beginning of my coding career!\nI used it to build simple websites and I used it to build large scale applications!  \nNow I use it to teach others, as well as create large applications. The possibilities of this language are endless, and the use cases keep increasing every single day! ",
+        "post_image": "uploads/blog_img/post-image-1581376324096.png",
+        "added_date": "1581376324100"
+      },
+      {
+        "id": "1581375207401",
+        "title": "Why learning coding is important?",
+        "content": "Nowadays with everything being electronic, everything needs to be programmed! \n\nFrom computers, to cars, machines, or anything else it most likely requires programming!\n\nSo as a result, demand for coders keeps increasing year by year, due to all these technological advances!",
+        "post_image": "uploads/blog_img/post-image-1581375207393.jpg",
+        "added_date": "1581375207401"
+      }
+    ]
   }
 ]

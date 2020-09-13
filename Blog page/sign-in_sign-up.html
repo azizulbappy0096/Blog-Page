@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title> Sign-in </title>
+    <!-- local CSS -->
+    <link rel="stylesheet" href="./style/sign-in_sign-up.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body class="">
+    <main>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-8 col-md-4"> 
+                    <form id="sign-in" class="d-none">
+                        <div class="form-group">
+                            <label for="userName">Username</label>
+                            <input type="text" class="form-control" id="userName" aria-describedby="emailHelp" required> 
+                        </div>
+                        <div class="form-group">
+                          <label for="userPassword">Password</label>
+                          <input type="password" class="form-control" id="userPassword" oninput="getAdmin()" required>
+                        </div>
+                        
+                        <a type="submit" id="button" class="btn btn-primary"> Sign-in </a>
+                    </form>
+
+                      <form id="sign-up" class="d-none">
+                        <div class="form-group">
+                            <label for="name"> Name </label>
+                            <input type="text" class="form-control" id="name" aria-describedby="emailHelp" required> 
+                        </div>  
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" id="username" aria-describedby="emailHelp" required> 
+                        </div>
+
+                        <div class="form-group">
+                          <label for="userpassword">Password</label>
+                          <input type="password" class="form-control" id="user-password" oninput="" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="profile-photo"> Choose Image </label>
+                            <input type="file" class="form-control-file" id="profile-photo" accept="image/*" required>
+                        </div>
+                        
+                        <a type="button" id="button" onclick="createAdmin()" class="btn btn-primary"> Sign-up </a>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/sign-in_sign_up.js"></script>
+</body>
+</html>
