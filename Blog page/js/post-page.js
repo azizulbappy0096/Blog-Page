@@ -18,7 +18,8 @@ previousPage = () => {
 }
 
 getIndividualPost = () => {
-    fetch(`${url}/api/posts/${getId()["id"]}`).then(response => {
+    let id = getId()["id"];
+    fetch(`${url}/api/posts/${id}`).then(response => {
         if(response.ok) {
             return response.json();
         }

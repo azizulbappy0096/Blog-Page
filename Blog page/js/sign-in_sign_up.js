@@ -63,7 +63,7 @@ createAdmin = () => {
             });
         }) 
     }else {
-        alert("Please choose Profile picture")
+        alert("Please fill up all the fields including Profile picture")
     }
 };
 

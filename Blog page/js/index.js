@@ -31,7 +31,7 @@ buildPost = (data) => {
             if(data !== null) {    
                 let postDate = new Date(Number(data.added_date)).toDateString();
                 postsHTML += ` 
-                <a href="./post-page.html?id=${data.id}&admin_id=${getId()}" class="post-link row justify-content-center ">
+                <a href="./post-page.html?id=${data.id}&admin_id=${getId()}"  class="post-link row justify-content-center ">
                     <div class="row flex-nowrap justify-content-center blog-lists">
                     
                         <div class="blog-cover-img" style="background-image: url(${url}${data.post_image})"></div>

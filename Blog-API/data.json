@@ -82,6 +82,13 @@
     "profile_image": "uploads/profile_img/profile_image-1580806416936.jpg",
     "blogs": [
       {
+        "id": "1600071428722",
+        "title": "a",
+        "content": "a",
+        "post_image": "uploads/blog_img/post_image-1600071428615.jpeg",
+        "added_date": "1600071428722"
+      },
+      {
         "id": "1600009259409",
         "title": "a",
         "content": "a",

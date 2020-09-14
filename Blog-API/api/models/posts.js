@@ -9,11 +9,24 @@ class Posts {
 
     getIndividualPost(postId) {
         const currentData = this.readData();
-        let foundData;
+        let foundData = [];
         for(let data of currentData) {
-            foundData = data.blogs.find(post => post.id === postId);
+            foundData.push(data["blogs"]); 
         };
-        return foundData;
+
+        let allPosts = [];
+        for(let data of foundData) {
+            data.map(post => {
+                if(post !== null) {
+                    allPosts.push(post);
+                }
+            });
+        };
+
+        const retrievePost = allPosts.find(post => post["id"] === postId)
+             
+        
+        return retrievePost;
     }
 
     getAdminInfo() {
