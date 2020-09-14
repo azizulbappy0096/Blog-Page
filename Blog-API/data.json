@@ -1,5 +1,22 @@
 [
   {
+    "user_id": "1600076617921",
+    "name": "CleverBappy",
+    "user_name": "dontKnow",
+    "password": "0010",
+    "profile_image": "uploads/profile_img/profile_image-1600076617910.jpeg",
+    "blogs": [
+      {
+        "id": "1600076631599",
+        "title": "Welcome",
+        "content": "Welcome 2",
+        "post_image": "uploads/blog_img/post_image-1600076631587.png",
+        "added_date": "1600076631599"
+      },
+      null
+    ]
+  },
+  {
     "user_id": "1600017421886",
     "name": "CleverBappy",
     "user_name": "clever09",

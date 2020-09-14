@@ -20,7 +20,7 @@ getAdmin = () => {
     const userName = document.getElementById('userName').value;
     const userPassword = document.getElementById("userPassword").value;
 
-    return fetch("http://localhost:3000/api/admin").then(response => {
+    fetch("http://localhost:3000/api/admin").then(response => {
         if(response.ok) {
             return response.json();
         }
@@ -28,7 +28,7 @@ getAdmin = () => {
         throw new Error("Request failed.");
     }, networkError => console.log(networkError.message)
     ).then(jsonResponse => {
-        return jsonResponse.map(data => {
+        jsonResponse.map(data => {
             if((data["user_name"] === userName) && (data["password"] === userPassword)) {
                 document.getElementById('button').href = `index.html?admin_id=${data["user_id"]}`;
             }

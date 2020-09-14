@@ -51,7 +51,8 @@ buildPost = (data) => {
 
     document.querySelector('.blog-container').innerHTML = postsHTML;
     document.querySelector('.new-button').href = `create-blog-page.html?admin_id=${getId()}`;
-    document.querySelector('.profile-image').style.backgroundImage = `url(${url}${data["profile_image"]})`
+    document.querySelector('.profile-image').style.backgroundImage = `url(${url}${data["profile_image"]})`;
+    document.querySelector('.profile-name').innerHTML = `${data["name"]}`;
 };
 
 window.onload = () => {
